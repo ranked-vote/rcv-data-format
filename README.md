@@ -24,11 +24,11 @@ The format is a subset of comma-separated values as defined in [RFC 4180](https:
 
 The header MUST contain each of the following columns, not necessarily in order.
 
-| column name | type    |
-|-------------|---------|
-| ballot_id   | string  |
-| rank        | integer |
-| choice      | string  |
+| column name   | type    |
+|---------------|---------|
+| `ballot_id`   | string  |
+| `rank`        | integer |
+| `choice`      | string  |
 
 The file MAY include other columns. These columns are ignored by the standard but allow you to add additional ballot-level metadata.
 
