@@ -40,7 +40,7 @@ Each row associated with the same ballot MUST have the same value in the `ballot
 
 ## `rank`
 
-Each row MUST have a positive integer value for `rank`, indicating the rank on the ballot represented by that row. `(ballot_id, rank)` pairs should be unique across all rows. If the ballot is undervoted at a given rank position (i.e. it does not specify a candidate in that position), that row may either be omitted from the file *or* included with the value `$UNDERVOTE` in the `choice` column (see below.) However, if a ballot is undervoted in *every* rank position, it MUST have a non-omitted record for rank 1 in order that it still be represented in analyses that use the total cast ballot count. Readers of the data format MUST treat both representations of undervoted ballots as identical.
+Each row MUST have a positive integer value for `rank`, indicating the rank on the ballot represented by that row. `(ballot_id, rank)` pairs should be unique across all rows. Each ballot MUST have a row for each possible rank. If the physical ballot does not have a vote for a given rank, the `choice` column should be `$UNDERVOTE` in the corresponding row.
 
 ## `choice`
 
