@@ -86,3 +86,7 @@ A general approach to normalization is to, for each ballot, rank the candidates 
 Care should be taken to ensure that the normalization is consistent with voting laws in the relevant jurisdiction. For example, under certain circumstances in Maine, a single undervote may be skipped rather than exhausting the ballot (as the general approach would do.) Normalization must be done in such a way that the tabulation is invariant to the normalization process, i.e. had the physical ballots been cast *as normalized,* the official tabulation would be the same at every round.
 
 In order to distinguish raw and normalized data, the file extensions `.raw.csv` and `.normalized.csv` may be used respectively. The `.normalized.csv` extension SHOULD ONLY be used for data that conforms to the additional restrictions listed in this section.
+
+## Reference Implementation
+
+A reference implementation in Python can be found in the [ranked_vote_tools.format](https://github.com/ranked-vote/ranked-vote-tools/blob/master/ranked_vote/format/__init__.py) package. Importers for several data formats can be found in the [ranked_vote_import](https://github.com/ranked-vote/ranked-vote-import) package.
