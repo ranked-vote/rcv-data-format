@@ -1,3 +1,5 @@
+**Note**: this specification served as a common format for the initial implementation of ranked.vote. Since its creation, the [NIST CVR](https://www.nist.gov/publications/cast-vote-records-common-data-format-specification-version-10) format has come about as a standard format. As such, this format is retired.
+
 # Ballot data format
 
 ## Motivation
